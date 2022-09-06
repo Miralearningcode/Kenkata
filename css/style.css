@@ -224,6 +224,29 @@ html, body {
             align-items: center;
         }
 
+/* showcase */
+.showcase {
+    background-color: var(--color-gray-3);
+}
+    .showcase .container {
+        text-align: center;
+        padding-top: 2.4rem;
+        padding-bottom: 2.4rem;
+    }
+
+    .showcase .showcase-body h1 {
+        font-size: 3.5rem;
+        font-family: var(--font-play);
+    }
+        .showcase .showcase-body h1 strong {
+            color: var(--color-theme);
+        }
+
+    .showcase img {
+        display: none;
+    }
+
+ 
 
 
 
@@ -231,25 +254,28 @@ html, body {
 
 
 
-
-
-
-
-/* Responsive design */
+/* responsive design Hans har 578 på min-width */
 @media (min-width: 576px) {
     .top-menu .menu-links { 
         display: block;
     }
-}               
-
-@media (min-width: 992px) {
+               
     .top-menu > .container {
         justify-content: space-between;
     }
+}
+
+@media (min-width: 768px) {
+   
+}
 
 /* menu-links is visable for screens 992px and up */
+@media (min-width: 992px) {
     .top-menu .menu-links .links {
         display: inline;
     }
 }
 
+@media (min-width: 1200px) {
+
+}

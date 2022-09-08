@@ -327,9 +327,7 @@ html, body {
             }
 
 /* shop-by-category */
-.shop-by-category {
-    
-}
+
 
     .shop-by-category .grid {
         display: grid;
@@ -339,6 +337,7 @@ html, body {
     }
 /* overflow:hidden, everything that overlines the box becomes hidden*/
     .shop-by-category .category-box {
+        position:relative;
         background-color: var(--color-gray-1);
         border-radius: var(--border-radius-small);
         height: 100%;
@@ -347,6 +346,9 @@ html, body {
     }
 
         .shop-by-category .category-box .category-box-title {
+            position: absolute;
+            left: 0;
+            bottom: 0%;
             width: 50%;
             border-radius: 0  var(--border-radius-small) 0 0;
             background-color: var(--color-theme-dark);

@@ -65,6 +65,10 @@ html, body {
         background-color: var(--color-theme-dark);
         color: var(--color-white);
     }
+/* bg är för badge(main-menu, menu-links) */
+.bg-theme {
+    background-color: var(--color-theme);
+}
     
 /*color is just incase it gets overwritten somewhere */
 .section-title {
@@ -209,6 +213,20 @@ html, body {
         .main-menu .menu-links .menu-link i {
             font-size: 1,33rem;
         }
+
+        .main-menu .menu-links #cart {
+            position: relative;
+        }
+            .main-menu .menu-links #cart .badge{
+                background-color: var(--color-theme);
+                position: absolute;
+                top: -0.9rem;
+                left: 0.6rem;
+            }
+                .main-menu .menu-links #cart:hover .badge {
+                    background-color: var(--color-product-instock);
+                }
+
         
 /* main-menu nav */
     .main-menu nav {
@@ -327,8 +345,6 @@ html, body {
             }
 
 /* shop-by-category */
-
-
     .shop-by-category .grid {
         display: grid;
         grid-gap: 0.8rem;
@@ -355,7 +371,18 @@ html, body {
             color: var(--color-theme);
             padding: 0.5rem 1rem;
             font-weight: var(--font-weight-medium);
+            height: 38px;
         }
+        .shop-by-category .category-box:hover .category-box-title {
+            height: 75px;
+        }
+
+            .shop-by-category .category-box .category-box-title span {
+                display: block;
+                color: var(--color-white);
+                font-size: 0.8rem;
+                margin-top: 0.5rem;
+            }
 
 
     #category-box-1 {

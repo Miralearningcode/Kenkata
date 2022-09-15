@@ -51,7 +51,21 @@ html, body {
     .btn-theme:hover {
         background-color: var(--color-theme-dark);
         color: var(--color-white);
+    
     }
+
+.btn-theme2 {
+    background-color: var(--color-theme-dark);
+    color: var(--color-white);
+    border-radius: var(--border-radius-medium);
+    font-weight: var(--font-weight-medium);
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+        .btn-theme2:hover {
+            background-color: var(--color-white);
+            color: var(--color-theme);
+        }
 
 .btn-white {
     background-color: var(--color-white);
@@ -441,8 +455,8 @@ html, body {
     .new-arrivals .card {
         position: relative;
         height: 380px;
-        width: 360px;
-        margin-left: 7%;
+        width: 415px;
+        /* margin-left: 7%; */
         overflow: hidden;
         background-color: var(--color-gray-3);
     }
@@ -549,40 +563,41 @@ html, body {
     .procent-off .container {
         display: flex;
     }
-    .procent-off .container .shop-now {
-        flex: 4;
+    .procent-off .shop-now {
+        flex: 3;
         background-color: var(--color-theme);
         text-align: center;
         padding-left: 1px;
         padding-right: 1px;
-        padding-top: 80px;
-        padding-bottom: 180px;
+        padding-top: 100px;
     }
-    .procent-off .container .shop-now h1 {
+    .procent-off .shop-now h1 {
         color: var(--color-white);
         font-family: var(--font-play);
         font-weight: var(--font-weight-bold);
-        font-size: var(--font-size-60)
+        font-size: 4rem;
     }
-        .procent-off .container .shop-now h1 span{
+        .procent-off .shop-now h1 span{
             color: var(--color-white);
             font-family: var(--font-play);
             font-weight: var(--font-weight-bold);
-            font-size: var(--font-size-36)
+            font-size: 2rem;
         }
-        .procent-off .container .shop-now p{
+        .procent-off .shop-now p{
             color: var(--color-white);
             font-family: var(--font-roboto);
             font-weight: var(--font-weight-regular);
-            font-size: var(--font-size-16);
-        
+            font-size: 1rem;
+            padding-top: 10px ;
+            padding-bottom: 10px;
         }
+        
 
-    .procent-off .container .learn-more {
-        flex: 5;
+    .procent-off .learn-more {
+        flex: 6;
         color: var(--color-white);
         padding-left: 500px;
-        padding-top: 7rem;
+        padding-top: 9rem;
         padding-bottom: 7rem;
     }
     

@@ -65,7 +65,9 @@ html, body {
         background-color: var(--color-theme-dark);
         color: var(--color-white);
     }
-/* bg är för badge(main-menu, menu-links) */
+
+
+    /* bg är för badge(main-menu, menu-links) */
 .bg-theme {
     background-color: var(--color-theme);
 }
@@ -231,7 +233,7 @@ html, body {
             .main-menu .menu-links #cart .badge{
                 background-color: var(--color-theme);
                 position: absolute;
-                top: -0.9rem;
+                top: -1rem;
                 left: 0.6rem;
             }
                 .main-menu .menu-links #cart:hover .badge {
@@ -433,14 +435,16 @@ html, body {
 
 /* new-arrivals ändra padding-top till 4rem */
 .new-arrivals {
-    padding-top: 2rem; 
+    padding-top: 4rem; 
 }
 
     .new-arrivals .card {
         position: relative;
         height: 380px;
-        width: 320px;
+        width: 360px;
+        margin-left: 7%;
         overflow: hidden;
+        background-color: var(--color-gray-3);
     }
 
     .new-arrivals .card img {
@@ -537,8 +541,51 @@ html, body {
                     }
                     
 
-    
+.procent-off {
+    background-color: var(--color-gray-1);
+    margin-top: 10rem;
+}
 
+    .procent-off .container {
+        display: flex;
+    }
+    .procent-off .container .shop-now {
+        flex: 4;
+        background-color: var(--color-theme);
+        text-align: center;
+        padding-left: 1px;
+        padding-right: 1px;
+        padding-top: 80px;
+        padding-bottom: 180px;
+    }
+    .procent-off .container .shop-now h1 {
+        color: var(--color-white);
+        font-family: var(--font-play);
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-60)
+    }
+        .procent-off .container .shop-now h1 span{
+            color: var(--color-white);
+            font-family: var(--font-play);
+            font-weight: var(--font-weight-bold);
+            font-size: var(--font-size-36)
+        }
+        .procent-off .container .shop-now p{
+            color: var(--color-white);
+            font-family: var(--font-roboto);
+            font-weight: var(--font-weight-regular);
+            font-size: var(--font-size-16);
+        
+        }
+
+    .procent-off .container .learn-more {
+        flex: 5;
+        color: var(--color-white);
+        padding-left: 500px;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+    
 
 
 

@@ -225,6 +225,26 @@ html, body {
         }
 
 
+        
+/* copyright */
+.copyright {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+    .copyright .container {
+        height: 100%;
+        display: flex;
+        /* justify-content: end; */
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }    
+    
+    .copyright p {
+        color: var(--color-white)
+    }
+
 
 
 

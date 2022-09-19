@@ -758,13 +758,15 @@ html, body {
             width: 100px;
 			height: 100px;
 			/* padding: 13px 18px; */
-			border-radius: 60px;
+            margin-right: 25px;
+			border-radius: 50px;
 			font-size: 15px;
 			text-align: center;
             border: dashed; 
             border-color: #20D3C2;
             border-width: 2.2px;
             cursor: auto; 
+            color: var(--color-theme-dark);
         }
             .sale .count-down .btn-circle span {
                 color: var(--color-theme);
@@ -773,6 +775,11 @@ html, body {
                 font-size: 2rem;
                 text-align: center;
             } 
+
+        .sale .count-down .btn-white {
+            margin-top: 50px;
+            margin-left: 160px;
+        }
 
 
 

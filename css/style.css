@@ -121,6 +121,16 @@ html, body {
 
     }
 
+a {
+    color: var(--color-theme);
+    font-weight: var(--font-weight-regular);
+    text-decoration: none;
+}
+    a:hover {
+        color: var(--color-dark);
+        text-decoration: underline;
+    }
+    
 .form-theme .card {
     padding: 1.5rem;
     border: none;
@@ -140,32 +150,34 @@ html, body {
         line-height: 2;
     }
     .form-theme .card .card-body .card-text a {
-        color: var(--color-theme);
         font-weight: var(--font-weight-medium);
-        text-decoration: none;
     }
-        .form-theme .card .card-body .card-text a:hover {
-            color: var(--color-dark);
-            text-decoration: underline;
-        }
-
+    
     .form-theme .card .card-body .card-text.text-small {
         color: var(--color-gray-5);
         font-size: 0.875rem;
     }
 
-        .form-theme form input {
-            display: block;
-            width: 100%;
-            border: none;
-            border-radius: 4px;
-            padding: 0.5rem 1rem;
-            margin: 0.3rem 0;
+    .form-theme form input[type=checkbox] {
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+    }
+ 
+    .form-theme form input[type=text],
+    .form-theme form input[type=email],
+    .form-theme form input[type=password] {
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: 4px;
+        padding: 0.5rem 1rem;
+        margin: 0.3rem 0;
+    }
+        .form-theme form input:focus {
+            outline: 0;
+            box-shadow: 0 0 3px 0 var(--color-gray-0);
         }
-            .form-theme form input:focus {
-                outline: 0;
-                box-shadow: 0 0 3px 0 var(--color-gray-0);
-            }
 
 
 
@@ -937,7 +949,7 @@ html, body {
     grid-gap: 0.8rem;
     grid-template-columns: repeat(2, minmax(100px, 249px));
     grid-template-rows: repeat(2, minmax(100px, 249px));
-    } 
+    }  
     
     .top-sellers {
         padding-top: 4rem; 
@@ -953,9 +965,9 @@ html, body {
         grid-row:  /  ;
     }
     #top-sellers-box-3 {
-        grid-column:  /  ;
-        grid-row:  / ;
-    }        */
+        grid-column:  2/2  ;
+        grid-row: 1 /-2 ;
+    }        
   
 
 
@@ -1021,6 +1033,60 @@ html, body {
         column-gap: 2rem;
         align-items: start;
     }
+
+.external-logins {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+    .external-logins .label {
+        background-color: var(--color-gray-4);
+        padding: 0 1rem;
+        z-index: 2;
+    }
+        .external-logins .line {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            right: 0;
+            border: 1px solid var(--color-gray-0);
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+.external-socialmedia-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+    .external-socialmedia-buttons .facebook-button {
+        text-align: left;
+    }
+    .external-socialmedia-buttons .facebook-button button {
+        background-image: url(../images/buttons/facebook-login-button.svg);
+        background-repeat: no-repeat;
+        border: none;
+        height: 42px;
+        width: 235px;
+    }
+        .external-socialmedia-buttons .facebook-button button:hover {
+            filter: brightness(90%);
+        }
+
+    .external-socialmedia-buttons .google-button {
+        text-align: right;
+    }
+    .external-socialmedia-buttons .google-button button {
+        background-image: url(../images/buttons/google-login-button.svg);
+        background-repeat: no-repeat;
+        border: none;
+        height: 42px;
+        width: 235px;
+    }
+        .external-socialmedia-buttons .google-button button:hover {
+            filter: brightness(90%);
+        }
 
 
 

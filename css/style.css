@@ -1122,6 +1122,58 @@ a {
         }
 
 
+.subscribe {
+    background-color: var(--color-gray-4);
+    margin-top: 8rem; 
+}
+.subscribe .container {
+    display: flex;
+}
+
+.subscribe .subscribe-now {
+    width: 80%;
+    height: 200px;
+}
+.subscribe .subscribe-now #emailForm {
+    border-radius: var(--border-radius-medium);
+    height: 45px;
+    margin: auto;
+    position: relative;
+}
+    .subscribe .subscribe-now #emailForm input {
+        position: absolute;
+        border-radius: var(--border-radius-medium);
+        /* height: 100%; */
+        /* width: 100%; */
+        outline: none;
+        border: 1px solid var(--color-gray-2);
+        font-size: 0.9rem;
+        padding-left: 1.3rem;
+    }
+    .subscribe .subscribe-now #emailForm button {
+        position: absolute;
+        top: 0;
+        left: 150px;
+        width: 50px;
+        height: 100%;
+        background-color: var(--color-theme);
+        color: var(--color-white);
+        border: none;
+        border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
+        transition: 0.3s ease-in-out;
+    }
+        .subscribe .subscribe-now #emailForm button:hover {
+            background-color: var(--color-theme-dark);
+        }
+
+.subscribe .grey-box {
+    background-color: var(--color-gray-1);
+    height: 200px;
+    width: 50%;
+    
+}
+
+
 
 
 

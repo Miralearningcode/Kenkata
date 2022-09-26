@@ -427,7 +427,8 @@ a {
 
 /* webshop-info */
 .webshop-info {
-    padding: 4rem 0;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
     .webshop-info .container {
@@ -940,6 +941,11 @@ a {
         margin: 0%;
     }
 
+.top-sellers #top-sellers-box-1 .card-body {
+    height: 7%;
+}
+    
+
 .top-sellers  .card .card-background {
     position: absolute;
     bottom: 0%;
@@ -952,6 +958,10 @@ a {
     .top-sellers  .card:hover .card-background {
         height: 100%;
     }
+    
+.top-sellers  #top-sellers-box-1 .card-background  {   
+    bottom: -7.5%;    
+}    
 
 .top-sellers  .card .card-menu {
     position: absolute;
@@ -1172,8 +1182,8 @@ a {
     .subscribe .subscribe-now #emailForm button {
         position: absolute;
         top: 0;
-        left: 350px;
-        width: 145px;
+        margin-left: 350px;
+        width: 125px;
         height: 100%;
         background-color: var(--color-theme);
         color: var(--color-white);
@@ -1188,7 +1198,7 @@ a {
 .subscribe .grey-box {
     background-color: var(--color-gray-1);
     height: 300px;
-    width: 77%;
+    width: 92%;
     
     
 }

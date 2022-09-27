@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
-/* HOME */
+
 :root {
     --color-theme: #20D3C2;
     --color-theme-light: #EDFCFA;
@@ -83,7 +83,7 @@ html, body {
     }
 
 
-/* bg is for badge(menu-main, menu-links) */
+/* bg is for badge(main-menu, menu-links) */
 .bg-theme {
     background-color: var(--color-theme);
 }
@@ -180,8 +180,8 @@ a {
         }
 
 
-/* menu-top */
-.menu-top {
+/* main-menu-top */
+.main-menu-top {
     background-color: var(--color-theme);
     color: var(--color-white);  
     position: fixed;
@@ -190,79 +190,79 @@ a {
     z-index: 3;
 }
 
-    .menu-top > .container {
+    .main-menu-top > .container {
         height: 100%;
         display: flex;
         justify-content: end;
         align-items: center;
     }
 
-    .menu-top .site-settings {
+    .main-menu-top .site-settings {
         display: flex;
     }
 
-        .menu-top .site-settings .dropdown-theme {
+        .main-menu-top .site-settings .dropdown-theme {
             background-color: var(--color-theme);
             color: var(--color-white);
         }
-            .menu-top .site-settings .dropdown-theme button {
+            .main-menu-top .site-settings .dropdown-theme button {
                 background-color: var(--color-theme);
                 color: var(--color-white);
                 border: none;
                 padding:0;
             }
-                .menu-top .site-settings .dropdown-theme button:hover {
+                .main-menu-top .site-settings .dropdown-theme button:hover {
                     color: var(--color-theme-dark);
                 }
-            .menu-top .site-settings .dropdown-theme .dropdown-menu {
+            .main-menu-top .site-settings .dropdown-theme .dropdown-menu {
                 background-color: var(--color-theme);
                 color: var(--color-white);
                 border: none;
                 width: 250px; 
             }
-                .menu-top .site-settings .dropdown-theme .dropdown-menu .dropdown-item {
+                .main-menu-top .site-settings .dropdown-theme .dropdown-menu .dropdown-item {
                     background-color: var(--color-theme);
                     color: var(--color-white);
                     border: none;
                     width: 100%; 
                     margin: 0;
                 }
-                    .menu-top .site-settings .dropdown-theme .dropdown-menu .dropdown-item:hover {
+                    .main-menu-top .site-settings .dropdown-theme .dropdown-menu .dropdown-item:hover {
                         background-color: var(--color-product-instock);
                         color: var(--color-theme-dark);
                     }
                    
-    .menu-top .menu-links { 
+    .main-menu-top .menu-links { 
         display: none;
     }
 
-    .menu-top .menu-links .links {
+    .main-menu-top .menu-links .links {
         display: none;
     }
 
-    .menu-top .menu-links a {
+    .main-menu-top .menu-links a {
        color: var(--color-white);
        text-decoration: none;
        margin: 0 1.2rem;
     }
-        .menu-top .menu-links a:hover {
+        .main-menu-top .menu-links a:hover {
             color: var(--color-theme-dark);
         }
 
-        .menu-top .menu-links .social-media {
+        .main-menu-top .menu-links .social-media {
             margin-left: 1rem;
             font-size: var(--font-size-14);
         }
-            .menu-top .menu-links .social-media a {
+            .main-menu-top .menu-links .social-media a {
                 margin: 0 0.3rem;
             }
-                .menu-top .menu-links .social-media a:last-child {
+                .main-menu-top .menu-links .social-media a:last-child {
                     margin: 0 0 0 0.3rem;
                 }
 
 
-/* menu-main  */
-.menu-main {
+/* main-menu */
+.main-menu {
     background-color: var(--color-white);
     color: var(--color-theme-dark);
     position: fixed;
@@ -272,27 +272,27 @@ a {
     margin-top: 25px;
 }
 
-    .menu-main > .container {
+    .main-menu > .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 2.2rem;
         padding-bottom: 2.2rem;
     }
-    .menu-main .brand {
+    .main-menu .brand {
         flex: 2;
     }
-    .menu-main .search {
+    .main-menu .search {
         flex: 4;
     }
 
-        .menu-main .search #searchboxForm {
+        .main-menu .search #searchboxForm {
             border-radius: var(--border-radius-medium);
             height: 45px;
             margin: auto;
             position: relative;
         }
-            .menu-main .search #searchboxForm input {
+            .main-menu .search #searchboxForm input {
                 position: absolute;
                 border-radius: var(--border-radius-medium);
                 height: 100%;
@@ -302,7 +302,7 @@ a {
                 font-size: 0.9rem;
                 padding-left: 1.3rem;
             }
-            .menu-main .search #searchboxForm button {
+            .main-menu .search #searchboxForm button {
                 position: absolute;
                 top: 0;
                 right: -2px;
@@ -314,66 +314,66 @@ a {
                 border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
                 transition: 0.3s ease-in-out;
             }
-                .menu-main .search #searchboxForm button:hover {
+                .main-menu .search #searchboxForm button:hover {
                     background-color: var(--color-theme-dark);
                 }
 
-    .menu-main .menu-links {
+    .main-menu .menu-links {
         flex: 3;
         display: flex;
         justify-content: end;
         align-items: center;
     }
-        .menu-main .menu-links .menu-link {
+        .main-menu .menu-links .menu-link {
             text-decoration: none;
             color: var(--color-theme-dark);
             margin: 0 0.8rem;
         }
-            .menu-main .menu-links .menu-link:hover {
+            .main-menu .menu-links .menu-link:hover {
                 color: var(--color-theme);
             }
-            .menu-main .menu-links .menu-link:first-child {
+            .main-menu .menu-links .menu-link:first-child {
                 margin: 0 2.4rem 0 0;
             }
-            .menu-main .menu-links .menu-link:last-child {
+            .main-menu .menu-links .menu-link:last-child {
                 margin: 0 0 0 0.8rem;
             }
 
-        .menu-main .menu-links .menu-link i {
+        .main-menu .menu-links .menu-link i {
             font-size: 1,33rem;
         }
 
-        .menu-main .menu-links #cart {
+        .main-menu .menu-links #cart {
             position: relative;
         }
-            .menu-main .menu-links #cart .badge{
+            .main-menu .menu-links #cart .badge{
                 background-color: var(--color-theme);
                 position: absolute;
                 top: -1rem;
                 left: 0.6rem;
             }
-                .menu-main .menu-links #cart:hover .badge {
+                .main-menu .menu-links #cart:hover .badge {
                     background-color: var(--color-product-instock);
                 }
 
         
-/* menu-main nav */
-    .menu-main nav {
+/* main-menu nav */
+    .main-menu nav {
         border-top: 1px solid var(--color-gray-2);
         border-bottom: 1px solid var(--color-gray-2)
     }
-        .menu-main > nav > .container {
+        .main-menu > nav > .container {
             display:flex;
             justify-content: space-between;
             align-items: center;
 
         }
 
-        .menu-main nav .browse-categories {
+        .main-menu nav .browse-categories {
             flex: 2;
         }
 
-            .menu-main nav .browse-categories button {
+            .main-menu nav .browse-categories button {
                 background-color: var(--color-theme);
                 color: var(--color-white);
                 border: none;
@@ -385,21 +385,21 @@ a {
                 padding: 0.7rem 1rem;
                 transition: 0.15s ease-in-out;
             } 
-                .menu-main nav .browse-categories button:hover {
+                .main-menu nav .browse-categories button:hover {
                     background-color: var(--color-theme-dark);
                     color: var(--color-white);
                 }
                 
-                .menu-main nav .browse-categories button span {
+                .main-menu nav .browse-categories button span {
                     display: flex;
                     align-items: center;
                 }
 
-                .menu-main nav .browse-categories button > span > i {
+                .main-menu nav .browse-categories button > span > i {
                     font-size: 1.4em;
                 }
 
-        .menu-main nav .special-offer {
+        .main-menu nav .special-offer {
             flex: 7;
             display: flex;
             justify-content: end;
@@ -407,30 +407,30 @@ a {
         }
 
 
-/* showcase */
-.showcase {
+/* hero */
+.hero {
     background-color: var(--color-gray-3);
     margin-top: 189px;
 }
-    .showcase .container {
+    .hero .container {
         text-align: center;
         padding-top: 2.4rem;
         padding-bottom: 2.4rem;
     }
 
-    .showcase .showcase-body h1 {
+    .hero .hero-body h1 {
         font-size: 3.5rem;
         font-family: var(--font-play);
     }
-        .showcase .showcase-body h1 strong {
+        .hero .hero-body h1 strong {
             color: var(--color-theme);
         }
 
-    .showcase .showcase-body p {
+    .hero .hero-body p {
         margin: 2rem 0;
     }
 
-    .showcase img {
+    .hero img {
         display: none;
     }
 
@@ -565,7 +565,7 @@ a {
     }
 
     .new-arrivals .card img {
-        height: 400px;
+        height: 350px;
     }
 
     .new-arrivals .card .card-body {
@@ -613,7 +613,7 @@ a {
             font-size: 1.5rem;
             margin: 0%;
         }
-
+    
     .new-arrivals .card .card-background {
         position: absolute;
         bottom: 0%;
@@ -650,24 +650,24 @@ a {
                 font-size: 1.0em;
             }
 
-                .new-arrivals.card .card-menu li a {
+                .new-arrivals .card .card-menu li a {
                     color: var(--color-gray-0);
                 }
                     .new-arrivals .card .card-menu li a:hover {
                         color: var(--color-theme);
                     }
-                  
+                                  
                     
-/* procent-off */
-.procent-off {
+/* discount */
+.discount {
     background-color: var(--color-gray-1);
     margin-top: 10rem;
 }
 
-    .procent-off .container {
+    .discount .container {
         display: flex;
     }
-    .procent-off .shop-now {
+    .discount .shop-now {
         flex: 3;
         background-color: var(--color-theme);
         text-align: center;
@@ -675,19 +675,19 @@ a {
         padding-right: 1px;
         padding-top: 100px;
     }
-    .procent-off .shop-now h1 {
+    .discount .shop-now h1 {
         color: var(--color-white);
         font-family: var(--font-play);
         font-weight: var(--font-weight-bold);
         font-size: 4rem;
     }
-        .procent-off .shop-now h1 span {
+        .discount .shop-now h1 span {
             color: var(--color-white);
             font-family: var(--font-play);
             font-weight: var(--font-weight-bold);
             font-size: 2rem;
         }
-        .procent-off .shop-now p {
+        .discount .shop-now p {
             color: var(--color-white);
             font-family: var(--font-roboto);
             font-weight: var(--font-weight-regular);
@@ -696,7 +696,7 @@ a {
             padding-bottom: 10px;
         }
         
-    .procent-off .learn-more {
+    .discount .learn-more {
         flex: 6;
         color: var(--color-white);
         padding-left: 500px;
@@ -718,7 +718,7 @@ a {
 }
 
 .featured-products .card img {
-    height: 400px;
+    height: 350px;
 }
 
 .featured-products .card .card-body {
@@ -1016,7 +1016,31 @@ a {
     }        
   
 
-/* site-title, byt plats på denna? */
+
+/* copyright */
+.copyright {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+
+    .copyright .container {
+        height: 100%;
+        display: flex;
+        /* justify-content: end; */
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }    
+    
+    .copyright p {
+        color: var(--color-white)
+    }
+
+    
+
+/*---account-page---*/
+
+/* site-title */
 .site-title {
     background-color: var(--color-theme-gray);
     color:#FFFFFF;
@@ -1210,54 +1234,34 @@ a {
 }
 
 
-/* copyright */
-.copyright {
-    background-color: var(--color-dark);
-    color: var(--color-white);
-}
-
-    .copyright .container {
-        height: 100%;
-        display: flex;
-        /* justify-content: end; */
-        align-items: center;
-        padding-top: 15px;
-        padding-bottom: 5px;
-    }    
-    
-    .copyright p {
-        color: var(--color-white)
-    }
-
-
 /* responsive design */
 @media (min-width: 576px) {
-    .menu-top .menu-links { 
+    .main-menu-top .menu-links { 
         display: block;
     }
                
-    .menu-top > .container {
+    .main-menu-top > .container {
         justify-content: space-between;
     }
 }
 
 @media (min-width: 768px) {
-    .showcase .showcase-body h1 {
+    .hero .hero-body h1 {
         font-size: var(--font-size-60);
     }
 
-    .showcase .showcase-body h1 strong {
+    .hero .hero-body h1 strong {
         display: block;
     }
 }
 
 /* menu-links is visable for screens 992px and up */
 @media (min-width: 992px) {
-    .menu-top .menu-links .links {
+    .main-menu-top .menu-links .links {
         display: inline;
     }
 
-    .showcase .container {
+    .hero .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -1267,7 +1271,7 @@ a {
        
     }
 
-    .showcase img {
+    .hero img {
         display: block;
         width: 50%
     }
@@ -1275,15 +1279,15 @@ a {
 }
 
 @media (min-width: 1200px) {
-    .showcase .showcase-body {
+    .hero .hero-body {
         flex: 1;
     }
 
-    .showcase .showcase-body p {
+    .hero .hero-body p {
         width: 80%
     }
 
-    .showcase img {
+    .hero img {
         flex: 1;
         width: 100%
     }

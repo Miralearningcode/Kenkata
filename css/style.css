@@ -53,7 +53,6 @@ html, body {
     .btn-theme:hover {
         background-color: var(--color-theme-dark);
         color: var(--color-white);
-    
     }
 
 .btn-theme2 {
@@ -369,7 +368,6 @@ a {
             display:flex;
             justify-content: space-between;
             align-items: center;
-
         }
 
         .main-menu nav .browse-categories {
@@ -714,7 +712,6 @@ a {
 .sale {
     background-color: var(--color-theme-dark);
     margin-top: 10rem;
-    padding-top: 5px;
 }
 
     .sale .container {
@@ -725,9 +722,7 @@ a {
         background-color: var(--color-theme);
         text-align: center;
         margin-bottom: 10%;
-        /* padding-left: 1px; */
-        /* padding-right: 1px; */
-        padding-top: 30px;
+        padding-top: 50px;
         margin-bottom: 145px; 
     }
     .sale .flash-sale h1 {
@@ -741,8 +736,6 @@ a {
             font-family: var(--font-roboto);
             font-weight: var(--font-weight-medium);
             font-size: 1.5rem;
-            /* padding-top: 10px ;
-            padding-bottom: 10px; */
         }
         
 
@@ -932,7 +925,6 @@ a {
     }
 
 
-
 /*---account-page---*/
 
 /* site-title */
@@ -941,7 +933,6 @@ a {
     color:#FFFFFF;
     padding-top: 15rem;
     padding-bottom: 2.5rem;
-
 }
 
 .site-title .container {
@@ -954,7 +945,6 @@ a {
     color: var(--color-theme);
     font-size: 1.5rem;
     margin: 0;
-
     font-family: var(--font-roboto);
     font-weight: var(--font-weight-medium);
 }
@@ -972,7 +962,6 @@ a {
     margin: 0;
   }
     .site-title .breadcrumb li {
-/* inline-block= does not add a line-break after the element, so the element can sit next to other elements. */
         display: inline;
         font-size: 18px;
     }
@@ -1166,7 +1155,6 @@ a {
         text-align: left;
         padding-top: 0;
         padding-bottom: 0;
-       
     }
 
     .hero img {
